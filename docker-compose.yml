@@ -1,0 +1,14 @@
+version: '2.1'
+
+services:
+  lambdash:
+    image: python:3
+    command:
+    - "sleep"
+    - "300000"
+    volumes:
+    - ./:/lambdash
+
+    # image: fw-registry-aws-dev.ss.aws.fwmrm.net/db/dep-db-mysql:trunk-latest
+    # ports:
+    #   - "3306:3310"
