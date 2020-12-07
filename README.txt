@@ -1,3 +1,10 @@
+How to use?
+
+- create a lambda function in AWS account use index.js
+- copy aws toekn to docker-compose.yml
+- run `docker-compose up` and ssh to container
+- run `pip install -r requirements.txt` in lambdash folder
+- run `./lambdash uname -a`
 
 This code is referenced in the following articles: Please read these
 articles for more information.
