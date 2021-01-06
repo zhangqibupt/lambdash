@@ -12,7 +12,7 @@ import boto3, json, sys, os, base64
 client = boto3.client('lambda', region_name='us-east-1')
 response = client.invoke(
     InvocationType='RequestResponse',
-    FunctionName='qzhang-test-lambda-env',
+    FunctionName='lambdash',
     Payload='{"command":'+json.dumps(" ".join(sys.argv[1:]))+'}')
 result = json.load(response['Payload'])
 

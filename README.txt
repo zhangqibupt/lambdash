@@ -1,10 +1,13 @@
 How to use?
 
 - create a lambda function in AWS account use index.js
-- copy aws toekn to docker-compose.yml
-- run `docker-compose up` and ssh to container
+- update FunctionName and region in file l
+- run `docker-compose up -d` and ssh to container
+- go to lambdash folder
 - run `pip install -r requirements.txt` in lambdash folder
-- run `./lambdash uname -a`
+- export AWS_ACCESS_KEY_ID=* // add your AWS_ACCESS_KEY_ID
+- export AWS_SECRET_ACCESS_KEY=* // add your AWS_SECRET_ACCESS_KEY
+- run `./l uname -a`
 
 This code is referenced in the following articles: Please read these
 articles for more information.
